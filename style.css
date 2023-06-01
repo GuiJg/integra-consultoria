@@ -1,0 +1,348 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+:root{
+    --cor-primeira: #37312E;
+    --cor-segunda: #BD4D10;
+    --cor-terceira: #EA9C29;
+    --cor--quarta: #F7882D;
+    --cor-quinta: #F7DCB7;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--cor-primeira);
+}
+
+.header{
+    display: flex;
+    justify-content: center;
+    top: 0;
+    left: 0;
+    bottom: 0;
+}
+
+.header-scroll{
+    background-color: #231f207d;
+}
+
+.logo{
+    padding: 1em;
+    width: 20%;
+}
+
+.header-menu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    background-color: #231f207d;
+    width: 100%;
+    padding: 0.5em 0.5em 0.5em 0.5em;
+    gap: 2em;
+}
+
+.header-link{
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 400;
+    transition: 0.3s;
+    color: #fff;
+}
+
+.header-link:hover{
+    color: var(--cor--quarta);
+}
+
+.header-link::after{
+    content: "";
+    display: block;
+    width: 0%;
+    height: 2px;
+    background-color: var(--cor--quarta);
+    transition: width 0.2s ease-in-out, transform 0.4s ease-in-out;
+    transform: translateX(-50%);
+}
+
+.header-link:hover::after{
+    width: 100%;
+    transform: translateX(0%);
+}
+
+.main-page{
+    margin-bottom: 0%;
+}
+
+.container-main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    background-image: url(assets/banner.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 50em;
+}
+
+.container-main h2{
+    font-family: 'Montserrat', sans-serif;
+    padding: 1em 0em 0em 1em;
+    font-size: 3rem;
+    font-weight: 300;
+    color: #fff; 
+}
+
+.container-main p{
+    font-family: 'Montserrat', sans-serif;
+    padding: 1em 0em 0em 1.5em;;
+    font-size: 2rem;
+    font-weight: 100;
+    color: #fff;
+}
+
+button{
+    background: none;
+    border: none;
+    padding: 2.5em 1em 1em 3.8em;;
+}
+
+.button-social{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    background: linear-gradient(to left, #EA9C29, #DB8B16, #BD7812, #9E640F);
+    border-radius: 0.4em;
+    height: 2.5em;
+    width: 8em;
+    font-size: 1.1rem;
+    transition: 0.5s;
+    color: #fff;
+}
+
+.button-social:hover{
+    scale: 1.1;
+}
+
+.container-services{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-position: center;
+    background-size: cover;
+    background-image: url(assets/background-services.svg);
+    gap: 0.7em;
+    height: 40em;
+}
+
+.container-services p{
+    border-bottom: 0.1em solid #F7882D;
+    color: var(--cor-terceira);
+    padding: 1em 0em 0em 7.5em;
+}
+
+.container-services h2{
+    font-family: "Montserrat", sans-serif;
+    font-size: 2rem;
+    color: #fff;
+    padding: 0.5em 0em 0em 5em;
+}
+
+.services{
+    display: flex;
+    justify-content: center;
+    height: 35em;
+    gap:2em;
+}
+
+.item{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    cursor: context-menu;
+    padding: 1.7em;
+    gap: 1em;
+    width: 20em;
+    height: 30em;
+    transition: 0.5s;
+    background-color: var(--cor-quinta);
+}
+
+.item:hover{
+    scale: 1.1;
+}
+
+.item h2{
+    font-family: 'Montserrat', sans-serif;
+}
+
+.img-services{
+    width: 6em;
+    margin-bottom: 3em;
+}
+
+.division{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: var(--cor--quarta);
+    margin-bottom: 5em;
+    height: 20em;
+}
+
+.division h2{
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 3rem;
+}
+
+.bottom-page{
+    margin-top: 6em;
+    margin-bottom: 6em;
+}
+
+.container-contract{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4em;
+}
+
+.container-contract h2{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 4rem;
+    color: #fff;
+}
+
+.empresas{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10em;
+    gap: 10em;
+}
+
+.item-empresas{
+    width: 15%;
+    height: 5em;
+    transition: 0.5s;
+}
+
+.item-empresas:hover{
+    scale: 1.1;
+}
+
+
+.footer{
+    display: flex;
+    justify-content: center;
+    overflow-y: hidden;
+    color: #fff;
+    background-image: url(https://softcomtecnologia.com.br/wp-content/uploads/2020/03/footerimage.jpg);
+    height: 25em;
+    padding: 1.5em;
+    gap: 10em;
+}
+
+.integra{ 
+    display: flex;
+    flex-direction: column;
+    height: 20em;
+    font-size: 1.2em;
+}
+
+.menu1{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+    margin-top: 3em;
+    margin-left: 10em;
+}
+
+.menu2{
+    display: flex;
+    flex-direction: column;
+    margin-top: 3em;
+    height: 30em;
+}
+
+.call-you{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: var(--cor-texto-preto);
+    background-color: #fcd800;
+    border-radius: 0.5em;
+    margin-bottom: 2em;
+    font-size: 1.1rem;
+    font-weight: 600;
+    height: 2.1em;
+    width: 10em;
+    gap: 0.5em;
+    transition: 0.5s;
+}
+
+.call-you:hover{
+    background-color: #ebc900;
+}
+
+.social-medias{
+    display: flex;
+    align-items: center;
+    width: 20em;
+    height: 5em;
+    gap: 1em;
+}
+
+.social-image{
+    width: 2.5em;
+    margin: 1em 1em 1em 0.2em;
+    transition: 0.5s;
+}
+
+.social-image:hover{
+    scale: 1.1;
+    filter: brightness(85%);
+}
+
+.menu-link{
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.2rem;
+    transition: 0.5s;
+}
+
+.menu-link:hover{
+    color: var(--cor-terceira);
+}
+
+h2{
+    width: 12em;
+    color: var(--cor-terceira);
+}
+
+.baseboard{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.4rem;
+    gap: 0.2em;
+    padding: 1em;
+    background-color: var(--cor--quarta);
+}
+
+.baseboard-link{
+    text-decoration: none;
+    color: #000;
+}
