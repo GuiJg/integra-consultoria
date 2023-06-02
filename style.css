@@ -14,7 +14,7 @@
     --cor-segunda: #BD4D10;
     --cor-terceira: #EA9C29;
     --cor--quarta: #F7882D;
-    --cor-quinta: #F7DCB7;
+    --cor-quinta: #f7dcb7;
 }
 
 body{
@@ -45,16 +45,16 @@ body{
 
 .header-menu{
     display: flex;
-    justify-content: center;
+    justify-content: end;
     align-items: center;
     padding: 0.5em 0.5em 0.5em 0.5em;
-    width: 65%;
+    width: 76%;
     gap: 2em;
 }
 
 .header-link{
     text-decoration: none;
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     font-weight: 400;
     transition: 0.3s;
     color: #fff;
@@ -90,8 +90,8 @@ body{
     align-items: start;
     background-image: url(assets/banner.png);
     background-size: cover;
-    border-bottom: 2em solid var(--cor--quarta);
-    border-bottom-left-radius: 15em;
+    border-bottom: 1.5em solid var(--cor--quarta);
+    border-bottom-left-radius: 12em;
     height: 50em;
 }
 
@@ -142,8 +142,7 @@ button{
     background-position: center;
     background-size: cover;
     background-image: url(assets/background-services.svg);
-    gap: 0.7em;
-    height: 40em;
+    height: 30em;
 }
 
 .container-services p{
@@ -155,13 +154,14 @@ button{
 .container-services h2{
     font-family: "Montserrat", sans-serif;
     font-size: 2.5rem;
-    color: #fff;
     padding: 0.5em 0em 0em 5em;
+    color: #fff;
 }
 
 .services{
     display: flex;
     justify-content: center;
+    align-items: center;
     height: 35em;
     gap:2em;
 }
@@ -178,7 +178,10 @@ button{
     height: 30em;
     padding: 1.7em;
     transition: 0.5s;
-    background-color: var(--cor-quinta);
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    color: #fff;
 }
 
 .item:hover{

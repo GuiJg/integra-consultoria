@@ -4,12 +4,12 @@ window.addEventListener("scroll", function () {
   if (window.scrollY > 0) {
     menu.classList.add("header-scroll");
     for (let i = 0; i < document.querySelectorAll(".header-link").length; i++) {
-      document.querySelectorAll(".header-link")[i].style.color = "#fff"
+      
     }
   } else {
     menu.classList.remove("header-scroll");
     for (let i = 0; i < document.querySelectorAll(".header-link").length; i++) {
-      document.querySelectorAll(".header-link")[i].style.color = "#000"
+      
     }
   }
 });
