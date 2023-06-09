@@ -8,8 +8,15 @@
     <link rel="stylesheet" href="style.css">
     <title>Integra</title>
 </head>
-<header class="header" id="home">
-         <img src="assets/integra-logo.png" alt="logo da integra" class="logo"> 
+<header class="header" id="header-integra">
+        <div class="header-logo">
+            <a href="index.html" class="logo-content">
+                <img src="assets/integra-logo.png" alt="logo da integra" class="logo">
+            </a>
+            <button class="menu-button">
+                <img src="assets/3-lines.png" alt="três linhas representando o menu do cabeçalho" class="img-3lines">
+            </button>
+        </div>
         <nav class="header-menu">
             <a href="#about" class="header-link">Quem somos</a>
             <a href="#services" class="header-link">Serviços</a>
@@ -18,22 +25,15 @@
         </nav>
 </header>
 <body>
-    <section class="main-page">
+    <section class="main-page" id="home">
         <div class="container-main">
-                <h2>Conhecimento é <strong style="color: #f7882d;">poder!</strong> 
+                <h2>
+                    Transformando
                     <br>
-                    Saiba quais são os conteúdos 
+                    <strong class="strong-main">conhecimento</strong>
                     <br>
-                    que vão transformar seu <strong style="color: #f7882d;">negócio</strong>
+                    em <strong class="strong-main">comportamento</strong>
                 </h2>
-                <p>
-                    Nós preparamos <strong style="color: #f7882d;">conteúdos</strong> semanais ricos em 
-                    <br>
-                    <strong style="color: #f7882d;">informações</strong> para você <strong style="color: #f7882d;">aproveitar</strong>
-                </p>
-                <button>
-                    <a href="https://www.instagram.com/integracg/" target="_blank" class="button-social">Mais conteúdos</a>
-                </button>
             </div>
         </div>
     </section>
@@ -50,34 +50,34 @@
             </h2>
         </div>
         <div class="services">
-            <div class="item">
-                <img src="assets/mercado.png" alt="" class="img-services" style="margin-top: 2.4em;">
-                <h2>Mercado</h2>
+            <a href="#" class="item">
+                <img src="assets/melhoria-processos.png" alt="" class="img-services">
+                <h2>Melhoria de processos</h2>
                 <p>
-                    Serviços focados na análise de dados, nas oportunidades, nos riscos e na tomada de decisões.
+                    Serviços focados em aprimorar a eficiência, qualidade, produtividade e satisfação do cliente em sua organização.
                 </p>
-            </div>
-            <div class="item">
-                <img src="assets/estrategia.png" alt="" class="img-services">
-                <h2>Estratégia</h2>
+            </a>
+            <a href="#" class="item">
+                <img src="assets/marketing.png" alt="" class="img-services">
+                <h2>Marketing Digital</h2>
                 <p>
-                    Serviços de consultoria focados no crescimento e na competitividade.
+                    Serviços especializados em impulsionar o crescimento online de produtos, serviços e marcas através de estratégias digitais.       
                 </p>
-            </div>
-            <div class="item">
+            </a>
+            <a href="#" class="item">
                 <img src="assets/gestao.png" alt="" class="img-services">
-                <h2>Gestão</h2>
-                <p>
-                    Serviços focados na estrutura, no modelo de negócios, na gestão e na operação.
+                <h2>Sistema de Gestão</h2>
+                <p>    
+                    Serviços especializados que visam aprimorar os processos e alcançar eficiência nas operações de uma organização.
                 </p>
-            </div>
-            <div class="item">
+            </a>
+            <a href="#" class="item">
                 <img src="assets/conversa.png" alt="" class="img-services">
                 <h2>Vamos conversar</h2>
                 <p>
-                    Todos os nossos serviços e soluções são personalizados. Vamos conversar!
+                    Todos os nossos serviços e soluções são personalizados e pensados em você. Vamos conversar!
                 </p>
-            </div>
+            </a>
         </div>
         <div class="division">
             <h2>
@@ -85,41 +85,46 @@
                 <br>
                 é garantido em contrato
             </h2>
-            <img src="assets/integra-logo-semfundo.png" alt="" style="width: 20em;">
+            <img src="assets/logo-icon.png" alt="LogoMarca da integra" class="logo-div">
         </div>
     </section>
     <section class="bottom-page" id="contratos">
-        <div class="container-contract">
-            <h2>
-                Nossos parceiros foram <strong style="color: #f7882d;">+50</strong> 
-            </h2>
+        <h2>Nossos parceiros somam <strong style="color: #f7882d;">+50</strong></h2>
+        <div class="container-contract">  
             <div class="empresas">
-                <img src="assets/Coca-Cola_logo.svg.png" alt="" class="item-empresas">
-                <img src="assets/Embratel_logo.png" alt="" class="item-empresas">
-                <img src="assets/logo_asa.webp" alt="" class="item-empresas">
-                <img src="assets/neoenergia-71.webp" alt="" class="item-empresas">
+                <img src="assets/saint-gobain-logo.png" alt="Logo da Saint Gobain" class="item-empresas">
+                <img src="assets/Coca-Cola_logo.svg.png" alt="Logo da Coca-Cola" class="item-empresas">
+                <img src="assets/Embratel_logo.png" alt="Logo da Embratel" class="item-empresas">
+                <img src="assets/logo_asa.webp" alt="Logo da Asa" class="item-empresas">
+                <img src="assets/neoenergia-71.webp" alt="Logo da Neoenergia" class="item-empresas">
+                <img src="assets/logo-tramontina-2048.png" alt="Logo da Tramontina" class="item-empresas">
             </div>
         </div>
     </section>
     <section class="footer" id="contato">
         <div class="integra">
-            <a href="#home"><img src="assets/integra-logo.png" alt="Logo da Integra" class="logo-footer"></a>
-            <br>
-            <h2>TRANSFORMAMOS SUA EMPRESA</h2>
-            <p>LOJA FÍSICA <strong style="color: #f7882d; font-size: 1.8rem;">+</strong></p>
-            <p>LOJA ONLINE <strong style="color: #f7882d; font-size: 1.8rem;">+</strong></p>
-            <p>COMÉRCIO <strong style="color: #f7882d; font-size: 1.8rem;">+</strong></p>
-            <p>BEBIDAS <strong style="color: #f7882d; font-size: 1.8rem;">+</strong></p> 
+            <a href="#"><img src="assets/integra-logo.png" alt="Logo da Integra" class="logo-footer"></a>
         </div>
-        <div class="menu1">
+        <div class="div-menu"></div>
+        <div class="menu">
             <h2>SOBRE A INTEGRA</h2>
+            <br>
             <a href="#" class="menu-link">INTEGRA</a>
-            <a href="#" class="menu-link">FRANQUIA</a>
             <a href="#" class="menu-link">PARCEIROS</a>
             <a href="#" class="menu-link">TREINAMENTOS</a>
             <a href="#" class="menu-link">TRABALHE CONOSCO</a>
+            <a href="#" class="menu-link">FALE CONOSCO</a>
         </div>
-        <div class="menu2">
+        <div class="div-menu"></div>
+        <div class="menu">
+            <h2>O QUE FAZEMOS?</h2>
+            <br>
+            <a href="#" class="menu-link">MELHORIA DE PROCESSOS</a>
+            <a href="#" class="menu-link">MARKETING DIGITAL</a>
+            <a href="#" class="menu-link">SISTEMA DE GESTÃO </a>
+        </div>
+        <div class="div-menu"></div>
+        <div class="menu3">
             <h2>FALE CONOSCO</h2>
             <a href="tel:+5508000033600" target="_blank" class="menu-link">0800 003 3600</a>
             <br>

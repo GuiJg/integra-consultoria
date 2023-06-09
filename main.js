@@ -1,4 +1,4 @@
-const menu = document.getElementById("home"); // colocar em cache
+const menu = document.getElementById("header-integra"); // colocar em cache
 window.addEventListener("scroll", function () {
   
   if (window.scrollY > 0) {
@@ -13,6 +13,8 @@ window.addEventListener("scroll", function () {
     }
   }
 });
+
+document.querySelector('.btn-home').style.opacity = "0"
 window.addEventListener('scroll', function(){
 
 const button = document.querySelector('.btn-home');
@@ -24,3 +26,4 @@ if (scrollPosition > 100) {
   button.style.opacity = '0';
 }
 });
+
