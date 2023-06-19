@@ -37,14 +37,14 @@ const headerMenu = document.querySelector('.header-menu');
   });
 
   let item = document.getElementById("item")
-  let contracts = document.getElementById("contracts")
+  let partners = document.getElementById("partners")
   let company = document.getElementById("company")
   let text = document.getElementById("text")
   let title = document.getElementById("title")
   
     window.addEventListener("scroll", function(){
       const sectionTop = item.getBoundingClientRect().top;
-      const sectionMid = contracts.getBoundingClientRect().top;
+      const sectionMid = partners.getBoundingClientRect().top;
       const sectionSa = company.getBoundingClientRect().top;
       const sectionText = text.getBoundingClientRect().top;
       const sectionTitle = title.getBoundingClientRect().top;
@@ -59,11 +59,11 @@ const headerMenu = document.querySelector('.header-menu');
       }
       
       if(sectionMid < windowHeight){
-        contracts.classList.add("ativa");
+        partners.classList.add("ativa");
       }
   
       else{
-        contracts.classList.remove("ativa");
+        partners.classList.remove("ativa");
       }
 
       if(sectionSa < windowHeight){

@@ -22,7 +22,7 @@ body{
     background-color: var(--cor-primeira);
 }
 
-#item, #contracts, #footer{
+#item, #partners, #company, #footer{
     opacity: 0;
     transition: opacity 1.5s ease, transform 1.5s ease;
     transform: translateY(50px);
@@ -41,8 +41,9 @@ body{
 }
 
 #item.ativa,
-#contracts.ativa,
-#footer.ativa{
+#partners.ativa,
+#footer.ativa,
+#company.ativa{
     transform: translateY(0);
     opacity: 1;
 }
@@ -245,16 +246,16 @@ button {
 
 .footer{
     display: flex;
+    justify-content: center;
+    align-items: center;
     overflow-y: hidden;
     color: #fff;
-    background-image: url(https://softcomtecnologia.com.br/wp-content/uploads/2020/03/footerimage.jpg);
-    height: 20em;
-    padding: 2em;
+    background: linear-gradient(to bottom, #2E2926, #1B1817);
+    padding: 1em;
     gap: 3em;
 }
 
 .footer h2{
-    width: 12em;
     color: var(--cor-terceira);
 }
 
@@ -286,7 +287,7 @@ button {
     display: flex;
     flex-direction: column;
     width: 40em;
-    gap: 0.5em;
+    gap: 0.3em;
 }
 
 .call-you{
@@ -341,9 +342,8 @@ button {
 }
 
 .div-menu{
-    border-right: 1px solid;
-    margin-top: 1em;
-    height: 12em;
+    border-right: 1px solid #ffffff5e;
+    height: 10em;
 }
 
 .btn-home{
@@ -355,6 +355,7 @@ button {
     left: 95.2%;
     width: 3.5em;
     height: 3.5em;
+    border: 1px solid #fff;
     border-radius: 1em;
     transition: 0.5s;
     background-color: #fff;

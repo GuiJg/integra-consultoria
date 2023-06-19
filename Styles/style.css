@@ -22,7 +22,7 @@ body{
     background-color: var(--cor-primeira);
 }
 
-#item, #contracts, #company, #footer{
+#item, #partners, #company, #footer{
     opacity: 0;
     transition: opacity 1.5s ease, transform 1.5s ease;
     transform: translateY(50px);
@@ -41,7 +41,7 @@ body{
 }
 
 #item.ativa,
-#contracts.ativa,
+#partners.ativa,
 #footer.ativa,
 #company.ativa{
     transform: translateY(0);
@@ -241,15 +241,16 @@ button {
 }
 
 .text-shadow{
-    text-shadow: 5px 5px 1px #000;
+    text-shadow: 3px 3px 3px #000;
 }
 
 .services{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 35em;
-    gap:2em;
+    margin: 2%;
+    height: 30em;
+    gap: 2em;
 }
 
 .item{
@@ -259,11 +260,11 @@ button {
     align-items: center;
     text-align: center;
     text-decoration: none;
-    width: 18em;
+    width: 17em;
     height: 25em;
-    padding: 1.5em;
+    padding: 1em;
     transition: 0.5s;
-    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0)); 
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.034)); 
     box-shadow: 15px 15px 0px 0px rgba(0, 0, 0, 0.37);
     border: 0.1em solid rgba(255, 255, 255, 0.18);
     color: #fff;
@@ -276,6 +277,7 @@ button {
 
 .item h2{
     font-family: 'Montserrat', sans-serif;
+    padding: 0.1em;
 }
 
 .saiba-mais{
@@ -285,19 +287,19 @@ button {
     text-align: center;
     text-decoration: none;
     font-family: 'Montserrat', sans-serif;
-    width: 7em;
-    height: 7em;
+    width: 6em;
+    height: 6em;
     padding: 0.5em;
     transition: 0.5s;
     background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0)); 
-    box-shadow: 15px 15px 0px 0px rgba(0, 0, 0, 0.37);
+    box-shadow: 10px 10px 0px 0px rgba(0, 0, 0, 0.37);
     border: 0.1em solid rgba(255, 255, 255, 0.18);
-    border-radius: 6em;
+    border-radius: 100%;
     color: #fff;
 }
 
 .saiba-mais:hover{
-    box-shadow: 15px 15px 10px 0px rgba(0, 0, 0, 0.37);
+    box-shadow: 10px 10px 10px 0px rgba(0, 0, 0, 0.37);
     scale: 1.05;
 }
 
@@ -315,7 +317,7 @@ button {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    background-color: var(--cor--quarta);
+    background-image: linear-gradient(to left, #f89b4e, #d86608, #f7882d);
     margin: 5% 0% 5% 0%;
     height: 20em;
 }
@@ -379,16 +381,16 @@ button {
 
 .footer{
     display: flex;
+    justify-content: center;
+    align-items: center;
     overflow-y: hidden;
     color: #fff;
-    background-image: url(https://softcomtecnologia.com.br/wp-content/uploads/2020/03/footerimage.jpg);
-    height: 20em;
-    padding: 2em;
+    background: linear-gradient(to bottom, #2E2926, #1B1817);
+    padding: 1em;
     gap: 3em;
 }
 
 .footer h2{
-    width: 12em;
     color: var(--cor-terceira);
 }
 
@@ -420,7 +422,7 @@ button {
     display: flex;
     flex-direction: column;
     width: 40em;
-    gap: 0.5em;
+    gap: 0.3em;
 }
 
 .call-you{
@@ -475,8 +477,8 @@ button {
 }
 
 .div-menu{
-    border-right: 1px solid;
-    height: 15em;
+    border-right: 1px solid #ffffff5e;
+    height: 10em;
 }
 
 .btn-home{
@@ -488,6 +490,7 @@ button {
     left: 95.2%;
     width: 3.5em;
     height: 3.5em;
+    border: 1px solid #fff;
     border-radius: 1em;
     transition: 0.5s;
     background-color: #fff;
@@ -496,7 +499,6 @@ button {
 .btn-home:hover{
     background-color: var(--cor--quarta);
     scale: 1.1;
-    /* box-shadow: 0.1em 0.1em 0.1em 0.1em ; */
     box-shadow: inset 1em 0.5em var(--cor--quarta);
 }
 

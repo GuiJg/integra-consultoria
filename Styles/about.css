@@ -22,7 +22,7 @@ body{
     background-color: var(--cor-primeira);
 }
 
-#item, #contracts, #footer{
+#item, #partners, #company, #footer{
     opacity: 0;
     transition: opacity 1.5s ease, transform 1.5s ease;
     transform: translateY(50px);
@@ -41,8 +41,9 @@ body{
 }
 
 #item.ativa,
-#contracts.ativa,
-#footer.ativa{
+#partners.ativa,
+#footer.ativa,
+#company.ativa{
     transform: translateY(0);
     opacity: 1;
 }
@@ -174,7 +175,7 @@ button {
     -webkit-text-fill-color: transparent;
     color: #000;
     font-weight: 600;
-    box-shadow: 6px 6px 0px 0px #f7882d;
+    box-shadow: 0px 6px 0px 0px #f7882d;
 }
 
 .strong-integra{
@@ -195,7 +196,8 @@ button {
 .container-about{
     display: flex;
     flex-direction: column;
-    align-items: start;
+    text-align: justify;
+    margin-bottom: 5%;
     padding: 4em 0em 0em 8em;
     gap: 2em;
 }
@@ -206,16 +208,18 @@ button {
     font-family: 'Montserrat', sans-serif;
     font-size: 3rem;
     font-weight: 500;
-    box-shadow: 4px 4px 0px 0px #f7882d;
+    box-shadow: 0px 4px 0px 0px #f7882d;
 }
 
 .container-about p{
     color: #fff;
+    width: 45%;
     font-size: 1.4rem;
 }
 
 .proposito-missao{
     display: flex;
+    flex-direction: column;
     gap: 5em;
 }
 
@@ -224,18 +228,88 @@ button {
     box-shadow: 0px 2px 0px 0px #f7882d;
 }
 
+.proposito{
+    display: flex;
+}
+
+.proposito img{
+    margin-right: 2%;
+    width: 5%;
+    height: 5%;
+}
+
+.missao{
+    display: flex;
+}
+
+.missao img{
+    margin-right: 2%;
+    width: 4.5%;
+    height: 100%;
+}
+
+.bottom-page{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 5%;
+}
+
+.frase{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 5%;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.192), rgba(10, 2, 2, 0.301));     
+    margin: 5% 0% 5% 0%;
+    height: 17em;
+}
+
+.frase h1{
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 3.2rem;
+    box-shadow: 0px 6px 0px 0px #f7882d;
+}
+
+.description{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.description p{
+    color: #fff;
+    width: 80%;
+    font-size: 1.3rem;
+    text-align: justify;
+}
+
+.container-team{
+    margin: 5% 7%;
+}
+
+.container-team h2{
+    color: #fff;
+    box-shadow: 0px 6px 0px 0px #f7882d;
+    font-size: 3rem;
+}
+
+.team{
+    display: flex;
+}
+
 .footer{
     display: flex;
+    justify-content: center;
+    align-items: center;
     overflow-y: hidden;
     color: #fff;
-    background-image: url(https://softcomtecnologia.com.br/wp-content/uploads/2020/03/footerimage.jpg);
-    height: 20em;
-    padding: 2em;
+    background: linear-gradient(to bottom, #2E2926, #1B1817);
+    padding: 1em;
     gap: 3em;
 }
 
 .footer h2{
-    width: 12em;
     color: var(--cor-terceira);
 }
 
@@ -267,7 +341,7 @@ button {
     display: flex;
     flex-direction: column;
     width: 40em;
-    gap: 0.5em;
+    gap: 0.3em;
 }
 
 .call-you{
@@ -322,9 +396,8 @@ button {
 }
 
 .div-menu{
-    border-right: 1px solid;
-    margin-top: 1em;
-    height: 12em;
+    border-right: 1px solid #ffffff5e;
+    height: 10em;
 }
 
 .btn-home{
@@ -336,6 +409,7 @@ button {
     left: 95.2%;
     width: 3.5em;
     height: 3.5em;
+    border: 1px solid #fff;
     border-radius: 1em;
     transition: 0.5s;
     background-color: #fff;
