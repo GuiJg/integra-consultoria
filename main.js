@@ -90,3 +90,20 @@ const headerMenu = document.querySelector('.header-menu');
         title.classList.remove("ativa");
       }
     });
+
+    //auto scroll empresas 
+
+// import Splide from '@splidejs/splide';
+// import { AutoScroll } from '@splidejs/splide-extension-auto-scroll';
+
+// const splide = new Splide( '.splide', {
+//   type   : 'loop',
+//   drag   : 'free',
+//   focus  : 'center',
+//   perPage: 3,
+//   autoScroll: {
+//     speed: 1,
+//   },
+// } );
+
+// splide.mount();

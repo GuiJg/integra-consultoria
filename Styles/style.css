@@ -272,7 +272,7 @@ button {
 
 .item:hover{
     box-shadow: 15px 15px 10px 0px rgba(0, 0, 0, 0.37);
-    scale: 1.05;
+    transform: scale(1.05);
 }
 
 .item h2{
