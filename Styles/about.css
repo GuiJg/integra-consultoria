@@ -322,6 +322,7 @@ button {
     width: 18em;
     height: 28em;
     padding: 1em;
+    gap: 1em;
     transition: 0.5s;
     background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.034)); 
     box-shadow: 15px 15px 0px 0px rgba(0, 0, 0, 0.37);
@@ -339,9 +340,12 @@ button {
 }
 
 .item img{
-    border: 0.2em solid rgba(255, 255, 255, 0.18);
     width: 100%;
     border-radius: 100%;
+}
+
+.item strong{
+    color: #f7882d;
 }
 
 .ceo{
@@ -349,7 +353,7 @@ button {
     justify-content: center;
     align-items: center;
     overflow: hidden;
-    border: 0.2em solid rgba(255, 255, 255, 0.18);
+    border: 0.1em solid #f7882d;
     width: 16em;
     height: 16em;
     border-radius: 100em;
@@ -358,6 +362,14 @@ button {
 #ceo{
     width: 100%;
     height: auto;
+}
+
+#pleno{
+    border: 0.1em solid #f7882d;
+}
+
+#social{
+    border: 0.1em solid #f7882d;
 }
 
 .btn-team{
@@ -371,7 +383,7 @@ button {
 }
 
 .item:hover .btn-team{
-    width: 5em;
+    width: 4em;
     opacity: 1;
 }
 

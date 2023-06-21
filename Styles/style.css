@@ -28,13 +28,14 @@ body{
     transform: translateY(50px);
 }
 
-#text, #title{ 
+#text, #logo, #title{ 
     opacity: 0;
     transition: opacity 1s ease, transform 1.5s ease;
     transform: translateX(100px);
 }
 
 #text.ativa,
+#logo.ativa,
 #title.ativa{
     transform: translateX(0);
     opacity: 1;

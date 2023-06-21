@@ -175,7 +175,8 @@ button {
     -webkit-text-fill-color: transparent;
     color: #000;
     font-weight: 600;
-    box-shadow: 0px 6px 0px 0px #f7882d;
+    width: 100%;
+    box-shadow: 0px 4px 0px 0px #f7882d;
 }
 
 .strong-integra{
@@ -188,60 +189,185 @@ button {
 }   
 
 .service-page{
-    background-position: center;
-    background-size: cover;
-    background-image: url(/assets/background-services.svg);
     margin-bottom: 5%;
 }
 
 .container-services{
     display: flex;
     flex-direction: column;
-    align-items: start;
-    gap: 5em;
-    padding: 4em 0em 0em 8em;
+    justify-content: center;
+    background-position: center;
+    background-size: cover;
+    background-image: url(/assets/background-services.svg);
+    gap: 3em;
+    height: 50em;
+    padding: 0em 0em 0em 4em;
 }
 
 .container-services h2{
-    display: inline-block;
-    color: #fff;
     font-family: 'Montserrat', sans-serif;
     font-size: 3rem;
-    font-weight: 500;
-    box-shadow: 0px 4px 0px 0px #f7882d;
 }
 
 .services{
     display: flex;
-    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    height: 30em;
     gap: 3em;
 }
 
 .item{
     display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
     align-items: center;
     text-align: center;
     text-decoration: none;
-    overflow: hidden;
-    width: 60em;
-    height: 10em;
-    padding: 1.5em;
+    width: 21em;
+    height: 27em;
+    padding: 1em;
+    margin: 1em;
     transition: 0.5s;
-    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0)); 
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.034)); 
     box-shadow: 15px 15px 0px 0px rgba(0, 0, 0, 0.37);
     border: 0.1em solid rgba(255, 255, 255, 0.18);
     color: #fff;
 }
 
+.item:hover{
+    transform: scale(1.02);
+    box-shadow: 15px 15px 10px 0px rgba(0, 0, 0, 0.37);
+}
+
 .item img{
-    background: linear-gradient(135deg, #0504047a, #2521212c); 
-    width: 25%;
+    width: 40%;
     height: auto;
     transition: 0.5s;
 }
 
-.item img:hover{
-    scale: 1.05;
+.item h2{
+    font-size: 1.5rem;
+    width: 85%;
+    border-bottom: 1px solid #f7882d;
+}
+
+.item p{
+    height: 7.5em;
+    text-align: start;
+}
+
+.item strong{
+    font-weight: 400;
+}
+
+.design-item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2em;
+    width: 20em;
+    height: 100%;
+    box-shadow: 0px 0px 0px 2px #000;
+    transition: 0.5s;
+}
+
+.item:hover .design-item{
+    box-shadow: 0px 0px 5px 1px #fff;
+}
+
+.division{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(to left, #f89b4e, #d86608, #f7882d);
+    padding: 4em;
+    gap: 3em;
+    margin: 5% 0% 5% 0%;
+    height: 21em;
+}
+
+.division h2{
+    font-size: 2.7rem;
+    text-align: justify;
+    color: #fff;
+}
+
+.btn-faleconosco{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    background: linear-gradient(to left, #f7882d, #f6750c, #d86608,#c75e08, #b75607);
+    border: 0.1em solid #f7882d;
+    border-left: 0.3em solid #f7882d;
+    border-bottom: 0.3em solid #f7882d;
+    border-radius: 0.4em;
+    height: 3em;
+    width: 13em;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #fff;
+}
+
+.btn-faleconosco:active{
+    border-left: 0.1em solid #f7882d;
+    border-bottom: 0.1em solid #f7882d;
+    width: 12.5em;
+}
+
+.container-solutions{
+    display: flex;
+    flex-direction: column;
+    gap: 3em;
+    margin: 8% 2% 0% 2%;
+}
+
+.solutions{
+    display: flex;
+    gap: 2em;
+}
+
+.solutions p,
+.solutions h2,
+.solutions span{
+    color: #fff;
+    margin: 1% 0% 2% 0%;
+}
+
+.solutions h2{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 3.2rem;
+    margin-bottom: 5%;
+    box-shadow: 0px 1px 0px 0px #f7882d;
+}
+
+.solutions span{
+    font-size: 1.7rem;
+}
+
+.solutions p{
+    font-size: 1.3rem;
+}
+
+.solutions img{
+    border: 2px solid #f7882d;
+    border-radius: 2%;
+    width: 26%;
+    height: 100%;
+}
+
+.container-text{
+    display: flex;
+    flex-direction: column;
+}
+
+.solutions-text{
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
 }
 
 .footer{

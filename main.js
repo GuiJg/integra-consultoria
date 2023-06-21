@@ -41,6 +41,7 @@ const headerMenu = document.querySelector('.header-menu');
   let company = document.getElementById("company")
   let text = document.getElementById("text")
   let title = document.getElementById("title")
+  let logo = document.getElementById("logo")
   
     window.addEventListener("scroll", function(){
       const sectionTop = item.getBoundingClientRect().top;
@@ -48,6 +49,7 @@ const headerMenu = document.querySelector('.header-menu');
       const sectionSa = company.getBoundingClientRect().top;
       const sectionText = text.getBoundingClientRect().top;
       const sectionTitle = title.getBoundingClientRect().top;
+      const sectionLogo = logo.getBoundingClientRect().top;
       const windowHeight=window.innerHeight;
   
       if(sectionTop < windowHeight){
@@ -88,6 +90,14 @@ const headerMenu = document.querySelector('.header-menu');
   
       else{
         title.classList.remove("ativa");
+      }
+
+      if(sectionLogo < windowHeight){
+        logo.classList.add("ativa");
+      }
+
+      else{
+        logo.classList.remove("ativa");
       }
     });
 
