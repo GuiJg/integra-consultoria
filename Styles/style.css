@@ -152,7 +152,7 @@ button {
     flex-direction: column;
     justify-content: center;
     align-items: start;
-    background-image: url(/assets/banner.png);
+    background-image: url(/assets/banner2.png);
     background-size: cover;
     border-bottom: 1em solid var(--cor--quarta);
     border-bottom-left-radius: 12em;
@@ -264,6 +264,7 @@ button {
     width: 17em;
     height: 25em;
     padding: 1em;
+    margin: 1em;
     transition: 0.5s;
     background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.034)); 
     box-shadow: 15px 15px 0px 0px rgba(0, 0, 0, 0.37);
@@ -291,6 +292,7 @@ button {
     width: 6em;
     height: 6em;
     padding: 0.5em;
+    margin: 1em;
     transition: 0.5s;
     background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0)); 
     box-shadow: 10px 10px 0px 0px rgba(0, 0, 0, 0.37);
