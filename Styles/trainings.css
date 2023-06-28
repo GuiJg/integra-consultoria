@@ -189,9 +189,9 @@ button {
 }   
 
 .container-treinamentos{
-    margin-bottom: 7%;
     background-position: center;
     background-size: cover;
+    margin-bottom: 7%;
     background-image: url(/assets/background-services.svg);
 }
 
@@ -210,8 +210,11 @@ button {
 
 .treinamentos{
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;    
     align-items: center;
+    margin-left: 15%;
+    width: 70%;
     padding: 4%;
     gap: 2em;
 }
@@ -221,8 +224,9 @@ button {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    overflow: hidden;
     width: 22em;
-    height: 55em;
+    height: 42em;
     padding: 1em;
     margin: 1em;
     gap: 2em;
@@ -276,7 +280,6 @@ button {
     text-decoration: none;
     color: #fff;
     background: linear-gradient(to left, #f89b4e, #d86608, #f7882d); 
-    box-shadow: #ffbe89 0 1px 4px,rgba(45, 35, 66, 0.15) 0 7px 1px -3px,#D6D6E7 0 -2px 0 inset;
     border-radius: 10%;
     width: 7em;
     height: 2.5em;
