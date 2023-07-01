@@ -188,13 +188,6 @@ button {
     font-weight: 600;
 }   
 
-.container-treinamentos{
-    background-position: center;
-    background-size: cover;
-    margin-bottom: 7%;
-    background-image: url(/assets/background-services.svg);
-}
-
 .title{
     display: inline;
     font-family: 'Montserrat', sans-serif;
