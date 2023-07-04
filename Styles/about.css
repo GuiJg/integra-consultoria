@@ -151,7 +151,8 @@ button {
     flex-direction: column;
     justify-content: center;
     align-items: start;
-    background-image: url(/assets/banner.png);
+    background-image: url(/assets/banner-about.png);
+    background-position: bottom;
     background-size: cover;
     border-bottom: 1em solid var(--cor--quarta);
     border-bottom-left-radius: 12em;
@@ -305,10 +306,10 @@ button {
 
 .team{
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    margin: 1%;
-    height: 33em;
+    padding: 2%;
     gap: 2em;
 }
 
@@ -342,7 +343,7 @@ button {
 .item img{
     width: 100%;
     border-radius: 100%;
-}
+}   
 
 .item strong{
     color: #f7882d;
@@ -362,6 +363,7 @@ button {
 #ceo{
     width: 100%;
     height: auto;
+    margin-top: 15%;
 }
 
 #pleno{
@@ -583,36 +585,22 @@ button {
     }
 
     .container-main{
-        flex-direction: row;
-        align-items: center;
+        margin-top: 28%;
         border-bottom: 0.5em solid var(--cor--quarta);
-        border-bottom-left-radius: 8em;
+        border-bottom-left-radius: 30%;
+        padding: 5%;
+        gap: 3%;
         height: 30em;
     }
 
     .container-main h2{
-        font-size: 2rem;
+        width: 11.5em;
+        font-size: 1.7rem;
     }
 
     .container-services{
         align-items: start;
         height: 18em;
-    }
-
-    .container-services p{
-        width: 15em;
-        padding: 0;
-        font-size: 1.1rem;
-    }
-
-    .container-services h2{
-        padding: 1em;
-        font-size: 1.2rem;
-    }
-
-    .services{
-        flex-direction: column;
-        height: 100em;
     }
 
     .division{
@@ -630,14 +618,6 @@ button {
         height: 6em;
     }
 
-    .bottom-page h2{
-        font-size: 3rem;
-    }
-
-    .empresas{
-        gap: 1em;
-    }
-
     .div-menu{
         border-right: none;
         border-bottom: 1px solid;
@@ -646,15 +626,47 @@ button {
 
     .footer{
         flex-direction: column;
+        align-items: normal;
         height: 60em;
+    }
+
+    .footer h2{
+        overflow: hidden;
     }
 
     .integra{
         margin: 0;
     }
 
-    .footer h2{
+    .logo-footer{
+        margin-top: 10%;
+    }
+
+    #logo-integra{
         overflow: hidden;
+    }
+
+    .menu{
+        text-align: center;
+        width: 100%;
+    }
+
+    .menu-link{
+        overflow: hidden;
+    }
+
+    .menu3{
+        text-align: center;
+        width: 100%;
+    }
+
+    .menu3 p{
+        overflow: hidden;
+    }
+
+    .social-medias{
+        justify-content: center;
+        width: 100%;
     }
 
     .btn-home{

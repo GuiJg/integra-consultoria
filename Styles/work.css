@@ -244,10 +244,6 @@ button {
     color: #fff;
 }
 
-.work:hover{
-    scale: 1.04;
-}
-
 .work span{
     font-size: 1.4rem;
 }
@@ -255,6 +251,14 @@ button {
 .work img{
     width: 50%;
     height: auto;
+    border-radius: 100%;
+    box-shadow: 6px 8px 5px 1px #1B1817;
+    transition: 0.5s;
+}
+
+.work img:hover{
+    box-shadow: 6px 8px 10px 1px #1B1817;
+    scale: 1.04;
 }
 
 .division{
@@ -618,18 +622,50 @@ button {
         border-bottom: 1px solid;
         height: 0;
     }
-
+    
     .footer{
         flex-direction: column;
+        align-items: normal;
         height: 60em;
+    }
+
+    .footer h2{
+        overflow: hidden;
     }
 
     .integra{
         margin: 0;
     }
 
-    .footer h2{
+    .logo-footer{
+        margin-top: 10%;
+    }
+
+    #logo-integra{
         overflow: hidden;
+    }
+
+    .menu{
+        text-align: center;
+        width: 100%;
+    }
+
+    .menu-link{
+        overflow: hidden;
+    }
+
+    .menu3{
+        text-align: center;
+        width: 100%;
+    }
+
+    .menu3 p{
+        overflow: hidden;
+    }
+
+    .social-medias{
+        justify-content: center;
+        width: 100%;
     }
 
     .btn-home{
