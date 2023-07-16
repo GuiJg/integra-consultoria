@@ -475,7 +475,6 @@ button {
     }
     
     .container-main{
-        margin-top: 28%;
         border-bottom: 0.5em solid var(--cor--quarta);
         border-bottom-left-radius: 30%;
         padding: 5%;
@@ -485,16 +484,18 @@ button {
 
     .container-main h2{
         padding: 0;
-        width: 11.5em;
-        font-size: 1.7rem;
+        width: 11em;
+        font-size: 2rem;
     }
 
     .title{
+        text-align: center;
         font-size: 2rem;
     }
 
     .title h2{
         width: 100%;
+        font-size: 2.7rem;
         margin: 0;
     }
 
@@ -544,6 +545,10 @@ button {
         margin: 0;
     }
 
+    .integra a{
+        overflow: hidden;
+    }
+
     .logo-footer{
         margin-top: 10%;
     }
@@ -572,7 +577,17 @@ button {
 
     .social-medias{
         justify-content: center;
+        gap: 13%;
         width: 100%;
+    }
+
+    .btn-social{
+        display: flex;
+        justify-content: center;
+    }
+
+    .social-image{
+        margin: 0;
     }
 
     .btn-home{

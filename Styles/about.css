@@ -585,7 +585,6 @@ button {
     }
 
     .container-main{
-        margin-top: 28%;
         border-bottom: 0.5em solid var(--cor--quarta);
         border-bottom-left-radius: 30%;
         padding: 5%;
@@ -594,30 +593,78 @@ button {
     }
 
     .container-main h2{
-        width: 11.5em;
-        font-size: 1.7rem;
+        width: 6em;
+        font-size: 3rem;
+        padding: 0;
     }
 
-    .container-services{
-        align-items: start;
-        height: 18em;
+    .strong-main{
+        box-shadow: 0px 0px;
     }
 
-    .division{
-        flex-direction: column-reverse;
-        margin-top: 5em;
-        height: 13em;
+    .container-about{
+        padding: 20% 5% 5% 5%;
     }
 
-    .division h2{
-        font-size: 1.4rem;
+    .container-about h2{
+        text-align: center;
     }
 
-    .logo-div{
-        width: 40%;
-        height: 6em;
+    .container-about p{
+        width: 100%;
+        text-align: start;
     }
 
+    .valores{
+        flex-direction: column;
+    }
+
+    .valores p{
+        margin: 5%;
+    }
+
+    #proposito{
+        display: none;
+    }
+
+    #missao{
+        display: none;
+    }
+
+    .frase{
+        height: 20em;
+    }
+
+    .frase h1{
+        font-size: 2.1rem;
+        box-shadow: 0px 0px;
+        text-align: center;
+    }
+
+    .pictures{
+        flex-direction: column;
+        align-items: center;
+        margin-top: 20%;
+        margin-bottom: 30%;
+    }
+
+    .pictures img{
+        width: 80%;
+    }
+
+    .container-team{
+        text-align: center;
+    }
+
+    .container-team h2{
+        font-size: 4rem;
+    }
+
+    .btn-team{
+        opacity: 1;
+        width: 4em;
+    }
+    
     .div-menu{
         border-right: none;
         border-bottom: 1px solid;
@@ -666,7 +713,17 @@ button {
 
     .social-medias{
         justify-content: center;
+        gap: 13%;
         width: 100%;
+    }
+
+    .btn-social{
+        display: flex;
+        justify-content: center;
+    }
+
+    .social-image{
+        margin: 0;
     }
 
     .btn-home{

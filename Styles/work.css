@@ -566,42 +566,49 @@ button {
         align-items: center;
         border-bottom: 0.5em solid var(--cor--quarta);
         border-bottom-left-radius: 8em;
+        padding: 5%;
         height: 30em;
     }
 
     .container-main h2{
-        font-size: 2rem;
-    }
-
-    .container-services{
-        align-items: start;
-        height: 18em;
-    }
-
-    .container-services p{
-        width: 15em;
+        font-size: 2.4rem;
         padding: 0;
-        font-size: 1.1rem;
     }
 
-    .container-services h2{
-        padding: 1em;
-        font-size: 1.2rem;
+    .container p{
+        width: 100%;
     }
 
-    .services{
-        flex-direction: column;
-        height: 100em;
+    .container-work{
+        margin-top: 25%;
+        margin-bottom: 10%;
+    }
+
+    .work{
+        width: 100%;
     }
 
     .division{
-        flex-direction: column-reverse;
         margin-top: 5em;
-        height: 13em;
     }
 
     .division h2{
-        font-size: 1.4rem;
+        font-size: 1.6rem;
+    }
+
+    .container-contact{
+        margin: 0;
+    }
+
+    .formu{
+        font-size: 3.5rem;
+    }
+
+    .form label,
+    .form input,
+    .form textarea{
+        width: 100%;
+        padding-right: 2%;
     }
 
     .logo-div{
@@ -665,7 +672,17 @@ button {
 
     .social-medias{
         justify-content: center;
+        gap: 13%;
         width: 100%;
+    }
+
+    .btn-social{
+        display: flex;
+        justify-content: center;
+    }
+
+    .social-image{
+        margin: 0;
     }
 
     .btn-home{

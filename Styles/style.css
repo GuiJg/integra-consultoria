@@ -567,10 +567,9 @@ button {
     }
 
     .container-main{
-        margin-top: 28%;
         border-bottom: 0.5em solid var(--cor--quarta);
         border-bottom-left-radius: 30%;
-        padding: 5%;
+        padding: 15% 5% 5% 5%;
         gap: 3%;
         height: 30em;
     }
@@ -699,7 +698,17 @@ button {
 
     .social-medias{
         justify-content: center;
+        gap: 13%;
         width: 100%;
+    }
+
+    .btn-social{
+        display: flex;
+        justify-content: center;
+    }
+
+    .social-image{
+        margin: 0;
     }
 
     .btn-home{
