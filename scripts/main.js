@@ -1,3 +1,21 @@
+document.cookie = "cookie_name=cookie_value; max-age=3600; secure; samesite=Lax";
+
+let xhr = new XMLHttpRequest();
+xhr.onreadystatechange = function() {
+    if (xhr.readyState === XMLHttpRequest.DONE) {
+        if (xhr.status === 200) {
+            let response = xhr.responseText; // Aqui você obtém a resposta da solicitação
+            // Faça algo com a resposta...
+        } else if (xhr.status === 404) {
+            console.error("Recurso não encontrado (404). Verifique a URL ou a disponibilidade do recurso.");
+        } else {
+            console.error("Erro ao fazer a solicitação: " + xhr.status);
+        }
+    }
+};
+xhr.open("GET", "https://integra-consultoria.vercel.app", true);
+xhr.send();
+
 const menu = document.getElementById("header-integra"); // colocar em cache
 window.addEventListener("scroll", function () {
   
