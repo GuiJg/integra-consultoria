@@ -597,7 +597,7 @@ button {
 
     .container-services p{
         width: 15em;
-        padding: 0;
+        padding: 8% 5% 5% 5%;
         margin-top: 10%;
         font-size: 1.5rem;
     }
@@ -610,16 +610,17 @@ button {
 
     .services{
         flex-direction: column;
-        height: 100em;
+        height: auto;
     }
 
     .item{
+        width: 17em;
         height: 25em;
     }
 
     .saiba-mais{
         width: 45%;
-        height: 12%;
+        height: 8em;
     }
 
     .division{
