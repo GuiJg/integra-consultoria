@@ -54,11 +54,11 @@ body{
     justify-content: space-evenly;
     position: fixed;
     z-index: 9;
-    gap: 20em;
+    gap: 0;
     top: 0;
     left: 0;
     right: 0;
-    padding: 1em;
+    padding: 1% 5% 1% 5%;
 }
 
 .header-scroll{
@@ -111,8 +111,8 @@ button {
     display: flex;
     justify-content: end;
     align-items: center;
-    padding: 0.5em 3.5em 0.5em 0.5em;
-    width: 76%;
+    text-align: center;
+    width: 100%;
     gap: 2em;
 }
 
@@ -156,7 +156,7 @@ button {
     background-size: cover;
     border-bottom: 1em solid var(--cor--quarta);
     border-bottom-left-radius: 12em;
-    padding: 0em 0em 0em 5em;
+    padding: 3%;
     gap: 2em;
     height: 45em;
 }
@@ -524,15 +524,13 @@ button {
     color: #000;
 }
 
-@media (max-width: 700px){
+@media (max-width: 1024px){
 
     .header{
         flex-direction: column;
-        justify-content: center;
-        align-items: center;
         background-color: #231f207d;
         backdrop-filter: blur(5px);
-        gap: 0;
+        padding: 3%;
     }
 
     .header-menu{
@@ -550,7 +548,6 @@ button {
     .menu-button{
         display: flex;
         align-items: center;
-        transition: 0.5s;
     }
 
     .header-link{
@@ -559,12 +556,23 @@ button {
 
     .logo{
         width: 80%;
-        margin-left: 1em;
     }
 
     .img-3lines{
         height: 1.5em;
     }
+    
+    .services{
+        flex-wrap: wrap;
+        height: auto;
+    }
+
+    .bottom-page h2{
+        text-align: center;
+    }
+}
+
+@media (max-width: 700px){
 
     .container-main{
         border-bottom: 0.5em solid var(--cor--quarta);
