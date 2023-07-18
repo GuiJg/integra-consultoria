@@ -119,10 +119,10 @@ const headerMenu = document.querySelector('.header-menu');
       }
     });
 
-    //auto scroll empresas 
-
-// import Splide from '@splidejs/splide';
+// import { Splide } from '@splidejs/splide';
 // import { AutoScroll } from '@splidejs/splide-extension-auto-scroll';
+    
+// new Splide( '.splide' ).mount( { AutoScroll } );
 
 // const splide = new Splide( '.splide', {
 //   type   : 'loop',
