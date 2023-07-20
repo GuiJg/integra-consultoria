@@ -189,11 +189,9 @@ button {
 }   
 
 .service-page{
-    margin-bottom: 7%;
     background-position: center;
     background-size: cover;
     background-image: url(/assets/background-services.svg);
-    
 }
 
 .title-services{
@@ -206,13 +204,18 @@ button {
 .container-solutions{
     display: flex;
     flex-direction: column;
+    margin: 8% 2% 5% 2%;
     gap: 1em;
-    margin: 8% 2% 0% 2%;
 }
 
 .solutions{
     display: flex;
     align-items: center;
+    background-color: #1B1817;
+    border-left: 10px solid #24201f;
+    border-bottom: 10px solid #24201f;
+    border-radius: 10px;
+    padding: 3%;
     gap: 2em;
 }
 

@@ -213,8 +213,17 @@ button {
 
 .container-about p{
     color: #fff;
-    width: 45%;
+    width: 80%;
     font-size: 1.4rem;
+}
+
+#integra{
+    background-color: #1B1817;
+    border-radius: 10px;
+    box-shadow: 15px 15px 0px 0px rgba(0, 0, 0, 0.37);
+    margin-top: 4%;
+    margin-bottom: 4%;
+    padding: 3%;
 }
 
 .container-valores{
@@ -230,6 +239,12 @@ button {
 
 .valores{
     display: flex;
+    text-align: start;
+    background-color: #1B1817;
+    padding: 3%;
+    margin: 2%;
+    border-radius: 10px;
+    box-shadow: 15px 15px 0px 0px rgba(0, 0, 0, 0.37);
     margin-right: 5%;
 }
 
