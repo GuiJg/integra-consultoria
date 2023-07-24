@@ -373,7 +373,6 @@ button {
 }
 
 .item-empresas{
-    width: 10%;
     transition: 0.5s;
     filter: grayscale(100%);
 }
@@ -381,6 +380,10 @@ button {
 .item-empresas:hover{
     filter: grayscale(0%);
     scale: 1.05;
+}
+
+.item-empresas img{
+    max-width: 100%;
 }
 
 .footer{

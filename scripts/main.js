@@ -119,19 +119,17 @@ const headerMenu = document.querySelector('.header-menu');
       }
     });
 
-// import { Splide } from '@splidejs/splide';
-// import { AutoScroll } from '@splidejs/splide-extension-auto-scroll';
-    
-// new Splide( '.splide' ).mount( { AutoScroll } );
-
-// const splide = new Splide( '.splide', {
-//   type   : 'loop',
-//   drag   : 'free',
-//   focus  : 'center',
-//   perPage: 3,
-//   autoScroll: {
-//     speed: 1,
-//   },
-// } );
-
-// splide.mount();
+  import Splide from '@splidejs/splide';
+  import { AutoScroll } from '@splidejs/splide-extension-auto-scroll';
+  
+  document.addEventListener("DOMContentLoaded", function () {
+    new Splide(".splide", {
+      type: "loop",
+      drag: "free",
+      focus: "center",
+      perPage: 5 ,
+      autoScroll: {
+        speed: 2,
+      },
+    }).mount(AutoScroll);
+  });

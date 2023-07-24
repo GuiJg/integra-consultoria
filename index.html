@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon shortcut" href="assets/integra-favicon.jpg">
     <link rel="stylesheet" href="Styles/style.css">
+    <link rel="stylesheet" href="node_modules/@splidejs/splide/dist/css/splide.min.css">
     <title>Integra Consultoria</title>
 </head>
 <header class="header" id="header-integra">
@@ -106,15 +107,59 @@
         <h2>
             Nossos parceiros somam <strong style="color: #f7882d;">+50</strong>
         </h2>
-        <div class="container-contract">  
-            <div class="empresas" id="company">
-                <img src="assets/saint-gobain-logo.png" alt="Logo da Saint Gobain" class="item-empresas">
-                <img src="assets/Coca-Cola_logo.svg.png" alt="Logo da Coca-Cola" class="item-empresas">
-                <img src="assets/Embratel_logo.png" alt="Logo da Embratel" class="item-empresas">
-                <img src="assets/logo_asa.webp" alt="Logo da Asa" class="item-empresas">
-                <img src="assets/neoenergia-71.webp" alt="Logo da Neoenergia" class="item-empresas">
-                <img src="assets/logo-tramontina-2048.png" alt="Logo da Tramontina" class="item-empresas">
-            </div>
+        <div class="splide container-contract">
+            <div class="splide__track" id="splide-track"> 
+                <ul class="splide__list empresas" id="company">
+                    <li class="splide__slide">
+                        <img src="assets/ale-logo.png alt=" alt="Logo da Ale" class="item-empresas">
+                    </li>
+                    <li class="splide__slide">
+                        <img src="assets/cbtu-logo.png" alt="Logo da CBTU" class="item-empresas">
+                    </li>
+                    <li class="splide__slide">
+                        <img src="assets/brascon-logo.png" alt="Logo da Brascon" class="item-empresas">
+                    </li>
+                    <li class="splide__slide">
+                        <img src="assets/logo_asa.webp" alt="Logo da Asa" class="item-empresas">
+                    </li>
+                    <li class="splide__slide">
+                        <img src="assets/owens-illinois-logo.png" alt="Logo da Owens Illinois" class="item-empresas">
+                    </li>
+                    <li class="splide__slide">
+                        <img src="assets/compesa-logo.png" alt="Logo da Compesa" class="item-empresas">
+                    </li>
+                    <li class="splide__slide">
+                        <img src="assets/Palmeiron-logo.png" alt="Logo da Palmeiron" class="item-empresas">
+                    </li>
+                    <li class="splide__slide">
+                        <img src="assets/vitamassa-logo.png" alt="Logo da Vitamassa" class="item-empresas">
+                    </li>
+                    <li class="splide__slide">
+                        <img src="assets/vitamilho-logo.png" alt="Logo da Vitamilho" class="item-empresas">
+                    </li>
+                    <li class="splide__slide">
+                        <img src="assets/vivix-logo.webp" alt="Logo da Vivix" class="item-empresas">
+                    </li>
+                    <li class="splide__slide">
+                        <img src="assets/sabara-logo.png" alt="Logo da Sabara" class="item-empresas">
+                    </li>
+                    <li class="splide__slide">
+                        <img src="assets/docemel-logo.png" alt="Logo da Frutas Doce Mel" class="item-empresas">
+                    </li>
+                    <li class="splide__slide">
+                        <img src="assets/pqs-logo.webp" alt="Logo da PQS" class="item-empresas">
+                    </li>
+                    <li class="splide__slide">
+                        <img src="assets/unhas-logo.png" alt="Logo da Unhas Cariocas" class="item-empresas">
+                    </li>
+                    <li class="splide__slide">
+                        <img src="assets/webradar-logo.png" alt="Logo da Webradar" class="item-empresas">
+                    </li>
+                    <li class="splide__slide">
+                        <img src="assets/transportes-lida-logo.png" alt="Logo da Transportes lida" class="item-empresas">
+                    </li>
+                </ul>
+            </div> 
         </div>
     </section>
     <section class="footer">
@@ -170,7 +215,7 @@
     </div>
     <footer class="baseboard">Desenvolvido por <strong><a href="https://www.linkedin.com/in/j-gui/" target="_blank" class="baseboard-link">José Guilherme</a></strong></footer>
     <script src="scripts/main.js"></script>
-    <script src="path-to-the-script/splide-extension-auto-scroll.min.js"></script>
+    <script src="node_modules/@splidejs/splide-extension-auto-scroll/dist/js/splide-extension-auto-scroll.min.js"></script>
     <div vw class="enabled">
         <div vw-access-button class="active"></div>
         <div vw-plugin-wrapper>
