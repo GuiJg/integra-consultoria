@@ -64,7 +64,6 @@ const headerMenu = document.querySelector('.header-menu');
     window.addEventListener("scroll", function(){
       const sectionTop = item.getBoundingClientRect().top;
       const sectionMid = partners.getBoundingClientRect().top;
-      const sectionSa = company.getBoundingClientRect().top;
       const sectionText = text.getBoundingClientRect().top;
       const sectionTitle = title.getBoundingClientRect().top;
       const sectionLogo = logo.getBoundingClientRect().top;
@@ -86,13 +85,7 @@ const headerMenu = document.querySelector('.header-menu');
         partners.classList.remove("ativa");
       }
 
-      if(sectionSa < windowHeight){
-        company.classList.add("ativa");
-      }
-  
-      else{
-        company.classList.remove("ativa");
-      }
+      
 
       if(sectionText < windowHeight){
         text.classList.add("ativa");
@@ -119,17 +112,24 @@ const headerMenu = document.querySelector('.header-menu');
       }
     });
 
-  import Splide from '@splidejs/splide';
-  import { AutoScroll } from '@splidejs/splide-extension-auto-scroll';
-  
-  document.addEventListener("DOMContentLoaded", function () {
-    new Splide(".splide", {
-      type: "loop",
-      drag: "free",
-      focus: "center",
-      perPage: 5 ,
-      autoScroll: {
-        speed: 2,
-      },
-    }).mount(AutoScroll);
+    const items = document.querySelectorAll('.item-empresas');
+
+    function handleAnimationEnd() {
+        this.style.transform = 'translateX(100%)';
+    }
+
+    items.forEach((item) => {
+        item.addEventListener('animationiteration', handleAnimationEnd);
+    });
+
+    document.addEventListener('DOMContentLoaded', function () {
+      new Splide('.splide', {
+          type   : 'loop',
+          drag   : 'free',
+          focus  : 'center',
+          perPage: 3,
+          autoScroll: {
+          speed: 1,
+          },
+      }).mount( window.splide.Extensions);
   });
