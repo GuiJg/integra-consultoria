@@ -47,7 +47,7 @@ let scrollPosition = window.pageYOffset || document.documentElement.scrollTop;
   
 });
 
-const menuButton = document.querySelector('.menu-button');
+const menuButton = document.querySelector('.icon-menu');
 const headerMenu = document.querySelector('.header-menu');
 
   menuButton.addEventListener('click', function() {
