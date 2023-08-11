@@ -86,25 +86,62 @@ body{
     width: 2.1em;
 }
 
-.menu-button{
+.icon-menu {
+    --gap: 5px;
+    --height-bar: 4px;
+    --pos-y-bar-one: 0;
+    --pos-y-bar-three: 0;
+    --scale-bar: 1;
+    --rotate-bar-one: 0;
+    --rotate-bar-three: 0;
+    width: 25px;
     display: none;
-    height: 2.5em;
-    font-size: 1.5rem;
-}
-
-button {
-    position: relative;
-    display: inline-block;
+    flex-direction: column;
+    gap: var(--gap);
     cursor: pointer;
-    outline: none;
-    vertical-align: middle;
-    text-decoration: none;
-    background: transparent;
-    font-size: inherit;
-    font-family: inherit;
-    border: 0;
-    padding: 0;
-}
+    position: relative;
+  }
+  
+  .bar {
+    position: relative;
+    height: var(--height-bar);
+    width: 100%;
+    border-radius: .5rem;
+    background-color: #fff;
+  }
+  
+  .bar--1 {
+    top: var(--pos-y-bar-one);
+    transform: rotate(var(--rotate-bar-one));
+    transition: top 200ms 100ms, transform 100ms;
+  }
+  
+  .bar--2 {
+    transform: scaleX(var(--scale-bar));
+    transition: transform 150ms 100ms;
+  }
+  
+  .bar--3 {
+    bottom: var(--pos-y-bar-three);
+    transform: rotate(var(--rotate-bar-three));
+    transition: bottom 200ms 100ms, transform 100ms;
+  }
+  
+  .check-icon:checked + .icon-menu > .bar--1 {
+    transition: top 200ms, transform 200ms 100ms;
+  }
+  
+  .check-icon:checked + .icon-menu > .bar--3 {
+    transition: bottom 200ms, transform 200ms 100ms;
+  }
+  
+  .check-icon:checked + .icon-menu {
+    --pos-y-bar-one: calc(var(--gap) + var(--height-bar));
+    --pos-y-bar-three: calc(var(--gap) + var(--height-bar));
+    --scale-bar: 0;
+    --rotate-bar-one: 45deg;
+    --rotate-bar-three: -45deg;
+  }
 
 .header-menu{
     display: flex;
@@ -227,6 +264,7 @@ button {
 }
 
 .solutions h2{
+    text-align: start;
     font-family: 'Montserrat', sans-serif;
     font-size: 3.2rem;
     margin-bottom: 5%;
@@ -235,10 +273,12 @@ button {
 
 .solutions span{
     font-size: 1.7rem;
+    text-align: start;
 }
 
 .solutions p{
     font-size: 1.3rem;
+    text-align: start;
 }
 
 .solutions img{
@@ -437,6 +477,10 @@ button {
         font-size: 1.5rem;
     }
 
+    .icon-menu{
+        display: flex;
+    }
+
     .logo{
         width: 80%;
     }
@@ -448,6 +492,47 @@ button {
     .services{
         flex-wrap: wrap;
         height: auto;
+    }
+
+    .solutions{
+        flex-direction: column;
+    }
+
+    .solutions img{
+        width: 80%;
+    }
+
+    .footer{
+        gap: 1em;
+    }
+
+    .footer h2{
+        font-size: 1rem;
+    }
+
+    .integra{
+        margin: 0;
+    }
+
+    .menu{
+        width: 100%;
+    }
+
+    .menu-link{
+        font-size: 1rem;
+    }
+
+    .menu3 a{
+        font-size: 0.8rem;
+    }
+
+    .social-image{
+        width: 2.6em;
+        margin: 0;
+    }
+
+    .btn-home{
+        left: 90%;
     }
 }
 
@@ -477,8 +562,7 @@ button {
     }
 
     .solutions{
-        flex-direction: column;
-        padding: 25% 5% 5% 5%;
+        padding: 10% 5% 5% 5%;
     }
 
     .solutions img{
@@ -486,8 +570,14 @@ button {
     }
 
     .solutions h2{
+        font-size: 2rem;
+        margin-bottom: 13%;
         box-shadow: 0px 1px 0px 0px #f7882d;
         padding: 0;
+    }
+
+    .solutions p{
+        font-size: 1rem;
     }
 
     .division{
@@ -509,21 +599,15 @@ button {
         font-size: 3rem;
     }
 
-    .empresas{
-        gap: 1em;
-    }
-
     .div-menu{
         border-right: none;
         border-bottom: 1px solid;
         height: 0;
     }
 
-    
     .footer{
         flex-direction: column;
         align-items: normal;
-        height: 60em;
     }
 
     .footer h2{
@@ -548,7 +632,17 @@ button {
 
     .menu{
         text-align: center;
+        margin-bottom: 5%;
         width: 100%;
+    }
+
+    .menu br{
+        display: none;
+    }
+
+    .menu h2{
+        margin-bottom: 5%;
+        font-size: 1.5rem;
     }
 
     .menu-link{
@@ -560,8 +654,16 @@ button {
         width: 100%;
     }
 
+    .menu3 h2{
+        font-size: 1.5rem;
+    }
+
     .menu3 p{
         overflow: hidden;
+    }
+
+    .menu3 a{
+        font-size: 1rem;
     }
 
     .social-medias{
@@ -576,10 +678,12 @@ button {
     }
 
     .social-image{
+        width: 3em;
         margin: 0;
     }
 
     .btn-home{
+        top: 86%;
         left: 80%;
     }
 
