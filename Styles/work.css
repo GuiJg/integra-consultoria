@@ -330,19 +330,22 @@ body{
 }
 
 .cont-form{
+    margin-top: 5%;
+    margin-bottom: 5%; 
+}
+
+.form{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
-    margin-top: 5%;
-    margin-bottom: 5%; 
 }
 
 .form label,
 .form input,
 .form textarea,
 .form button {
-    width: 99%;
+    width: 100%;
+    overflow: hidden;
 }
 
 .form label{
@@ -443,6 +446,15 @@ body{
     justify-content: center;
     margin-left: 3em;
     font-size: 1.2em;
+}
+
+.integra p{
+    font-weight: 300;
+    margin-bottom: 20%;
+}
+
+.integra span{
+    border-top: 1px solid #fff;
 }
 
 .menu{
