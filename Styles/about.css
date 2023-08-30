@@ -413,7 +413,7 @@ body{
 #ceo{
     width: 100%;
     height: auto;
-    margin-top: 15%;
+    margin-top: 20%;
 }
 
 #pleno{
@@ -479,6 +479,15 @@ body{
     justify-content: center;
     margin-left: 3em;
     font-size: 1.2em;
+}
+
+.integra p{
+    font-weight: 300;
+    margin-bottom: 20%;
+}
+
+.integra span{
+    border-top: 1px solid #fff;
 }
 
 .menu{
