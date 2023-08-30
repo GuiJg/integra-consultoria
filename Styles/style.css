@@ -195,7 +195,6 @@ body{
     border-bottom: 1em solid var(--cor--quarta);
     border-bottom-left-radius: 12em;
     padding: 3%;
-    gap: 2em;
     height: 45em;
 }
 
@@ -204,6 +203,7 @@ body{
     font-size: 4rem;
     font-weight: 300;
     width: 20em;
+    margin-bottom: 2%;
     color: #fff; 
 }
 
@@ -243,6 +243,7 @@ body{
     border-radius: 0.4em;
     height: 3em;
     width: 8em;
+    margin-top: 2%;
     font-size: 1.1rem;
     transition: 0.5s;
     color: #fff;
@@ -453,6 +454,15 @@ body{
     justify-content: center;
     margin-left: 3em;
     font-size: 1.2em;
+}
+
+.integra p{
+    font-weight: 300;
+    margin-bottom: 20%;
+}
+
+.integra span{
+    border-top: 1px solid #fff;
 }
 
 .menu{
