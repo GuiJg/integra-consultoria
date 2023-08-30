@@ -336,6 +336,15 @@ body{
     font-size: 1.2em;
 }
 
+.integra p{
+    font-weight: 300;
+    margin-bottom: 20%;
+}
+
+.integra span{
+    border-top: 1px solid #fff;
+}
+
 .menu{
     display: flex;
     flex-direction: column;
