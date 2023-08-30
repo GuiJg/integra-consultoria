@@ -253,8 +253,7 @@ body{
     flex-wrap: wrap;
     justify-content: center;    
     align-items: center;
-    margin-left: 15%;
-    width: 70%;
+    width: 100%;
     padding: 4%;
     gap: 2em;
 }
@@ -266,7 +265,7 @@ body{
     align-items: center;
     overflow: hidden;
     width: 22em;
-    height: 48em;
+    height: 40em;
     padding: 1em;
     margin: 1em;
     gap: 2em;
@@ -312,8 +311,8 @@ body{
 }
 
 .image-training img{
-    width: 100%;
-    height: 70%;
+    width: 50%;
+    height: auto;
 }
 
 .learn-more{
@@ -366,6 +365,15 @@ body{
     justify-content: center;
     margin-left: 3em;
     font-size: 1.2em;
+}
+
+.integra p{
+    font-weight: 300;
+    margin-bottom: 20%;
+}
+
+.integra span{
+    border-top: 1px solid #fff;
 }
 
 .menu{
