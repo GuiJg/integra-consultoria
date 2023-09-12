@@ -82,19 +82,18 @@
             <h1 class="formu">
                 Envie seu <strong class="strong-integra">curriculo</strong>
             </h1>
-            <form action="https://formsubmit.co/silvania@integracg.com.br" method="POST" class="form"> 
-                <label for="name">Nome</label>
-                <input type="text" name="name" id="name" placeholder="Digite seu nome" required="">
-                <label for="email">Email</label>
-                <input type="email" name="email" id="email" placeholder="Digite seu e-mail" required="">
-                <label for="text">Celular</label>
-                <input type="text" name="numero" id="numero" placeholder="(00) 0 0000-0000" required="">
-                <label for="assunto">Assunto</label>
-                <input type="text" name="assunto" id="assunto" placeholder="Digite o assunto do e-mail" required="">
-                <input type="hidden" name="_next" value="https://sitedaintegra.com/">
-                <label for="message">Mensagem</label>
-                <textarea name="message" id="message" placeholder="Escreva sua mensagem" required=""></textarea>
-                <button type="submit">Enviar</button>
+            <form action="https://api.staticforms.xyz/submit" method="POST" class="form">
+                    <label for="name">Nome</label>
+                    <input type="text" name="name" id="name" placeholder="Digite seu nome" required="">
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email" placeholder="Digite um e-mail válido" required="">
+                    <label for="message">Mensagem</label>
+                    <textarea name="message" id="message" placeholder="Escreva sua mensagem" required=""></textarea>
+                    <button type="submit">Enviar</button>
+
+                    <input type="hidden" name="accessKey" value="56ad90db-d598-42a1-b00e-e223dccb494e">
+                    <input type="hidden" name="redirectTo" value="https://integra-consultoria.vercel.app/obrigado.html"> 
+                </form>
             </form>
         </div>
     </section>
