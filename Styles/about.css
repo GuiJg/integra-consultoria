@@ -304,6 +304,14 @@ body{
     margin-bottom: 5%;
 }
 
+.bottom-page h2 {
+    font-size: 3.6rem;
+    margin-left: 9%;
+    margin-bottom: 10%;
+    box-shadow: 1px 4px 1px #f7882d;
+    color: #fff;
+}
+
 .frase{
     display: flex;
     justify-content: space-evenly;
