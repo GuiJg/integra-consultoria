@@ -288,6 +288,10 @@ body{
     padding: 0.1em;
 }
 
+.item ul{
+    overflow: hidden;
+}
+
 .item li{
     margin-bottom: 5%;
     position: relative;
@@ -308,6 +312,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    overflow: hidden;
 }
 
 .image-training img{
